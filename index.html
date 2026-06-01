@@ -1,434 +1,2091 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gainesville Shoe Repair | Gainesville, GA</title>
-  <meta name="description" content="Gainesville Shoe Repair — professional Cleaning Service services in Gainesville, GA." />
-  <meta property="og:title" content="Gainesville Shoe Repair | Gainesville, GA" />
-  <meta property="og:description" content="Professional Cleaning Service services in Gainesville, GA." />
-  <meta property="og:image" content="/tmp/agy_images/GAINESVILLE-SHOE-0601/hero.webp" />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <style>
-    /* ===== RESET ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Sora', sans-serif;
-      color: #2a1f1a;
-      background: #FDFAF6;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gainesville Shoe Repair | Premium Shoe & Leather Restoration GA</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Family-owned shoe & leather repair shop in Gainesville, GA. Since 1988, Doug Embry & team offer premium sole replacement, heel repair, zipper replacement, and leather conditioning.">
+    <meta name="keywords" content="shoe repair gainesville ga, boot repair ga, leather repair, cobbler gainesville, sole replacement, heel repair, belt shortening, doug embry, gainesville shoe repair">
+    <meta name="author" content="Gainesville Shoe Repair">
+    <meta name="robots" content="index, follow">
 
-    :root {
-      --accent:      #0e9f6e;
-      --accent-dark: #047857;
-      --accent-bg:   #0e9f6e14;
-      --ink:         #2a1f1a;
-      --ink-2:       #6b5c50;
-      --ink-3:       #a09590;
-      --cream-1:     #FDFAF6;
-      --cream-2:     #F5EFE6;
-      --cream-3:     #EDE5D8;
-      --border:      #e5ddd5;
-      --white:       #ffffff;
-    }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gainesvilleshoerepair.com/">
+    <meta property="og:title" content="Gainesville Shoe Repair | Premium Shoe & Leather Restoration">
+    <meta property="og:description" content="Expert craftsmanship in Gainesville, GA. Rebuilding soles, fixing heels, repairing boots, and restoring quality leather goods since 1988.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1590735204425-271d8befb547?auto=format&fit=crop&w=1200&q=80">
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gainesvilleshoerepair.com/">
+    <meta property="twitter:title" content="Gainesville Shoe Repair | Premium Shoe & Leather Restoration">
+    <meta property="twitter:description" content="Expert craftsmanship in Gainesville, GA. Rebuilding soles, fixing heels, repairing boots, and restoring quality leather goods since 1988.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1590735204425-271d8befb547?auto=format&fit=crop&w=1200&q=80">
 
-    /* ===== TOP BAR ===== */
-    .topbar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 48px);
-    }
-    .topbar-inner {
-      max-width: 960px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    }
-    .topbar-brand { font-size: clamp(0.9rem, 3vw, 1.05rem); font-weight: 700; color: var(--ink); }
-    .topbar-phone {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.75rem, 2.5vw, 0.88rem);
-      font-weight: 700;
-      padding: clamp(7px, 2vw, 10px) clamp(14px, 3vw, 20px);
-      border-radius: 99px;
-      transition: background 0.15s;
-    }
-    .topbar-phone:hover { background: var(--accent-dark); }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    /* ===== HERO — split layout, business image left ===== */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: clamp(380px, 60vw, 560px);
-    }
-    .hero-img-col {
-      background-image: url('/tmp/agy_images/GAINESVILLE-SHOE-0601/hero.webp');
-      background-size: cover;
-      background-position: center;
-      min-height: clamp(200px, 35vw, 320px);
-    }
-    .hero-text-col {
-      background: var(--white);
-      display: flex; flex-direction: column; justify-content: center;
-      padding: clamp(32px, 6vw, 64px) clamp(24px, 5vw, 56px);
-    }
-    .hero-badge {
-      display: inline-block;
-      background: var(--accent-bg);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin-bottom: clamp(14px, 3vw, 20px);
-    }
-    .hero h1 {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.12;
-      letter-spacing: -0.02em;
-      margin-bottom: clamp(10px, 2vw, 14px);
-    }
-    .hero-sub {
-      font-size: clamp(0.88rem, 2.5vw, 1.05rem);
-      color: var(--ink-2);
-      margin-bottom: clamp(18px, 3vw, 26px);
-      line-height: 1.55;
-    }
-    .hero-rating {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.85rem;
-      color: var(--ink-2);
-      margin-bottom: clamp(20px, 4vw, 28px);
-      display: flex;
-    }
-    .hero-stars { color: #f59e0b; letter-spacing: 1px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 700;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: background 0.15s, transform 0.15s;
-    }
-    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-    .btn-outline {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: transparent;
-      color: var(--ink);
-      border: 1.5px solid var(--border);
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 600;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    <!-- Inline Styles (Custom Orange / Charcoal Theme) -->
+    <style>
+        :root {
+            /* Colors */
+            --primary: #FF5E14;
+            --primary-hover: #E04D0A;
+            --primary-rgb: 255, 94, 20;
+            --charcoal-deep: #121416;
+            --charcoal-mid: #1A1D20;
+            --charcoal-light: #2A2E33;
+            --charcoal-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #F8F9FA;
+            --text-secondary: #ADB5BD;
+            --white: #FFFFFF;
+            --gold: #FFC107;
+            
+            /* Typography */
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            
+            /* Transitions */
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
 
-    /* ===== WRAP ===== */
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
-    .wrap--narrow { max-width: 680px; }
+        /* Base Setup */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* ===== SECTIONS ===== */
-    .section { padding: clamp(48px, 8vw, 80px) 0; }
-    .section--tinted { background: var(--cream-2); }
-    .section--white  { background: var(--white); }
-    .section-header { margin-bottom: clamp(24px, 4vw, 36px); }
-    .section-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 4vw, 2rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.2;
-    }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background-color: var(--charcoal-deep);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+        }
 
-    /* ===== SERVICES — illustrated cards ===== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-      gap: clamp(14px, 2.5vw, 20px);
-    }
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
-    }
-    .service-card:hover {
-      box-shadow: 0 8px 32px rgba(42, 31, 26, 0.1);
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-    .service-icon {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      line-height: 1;
-      margin-bottom: clamp(12px, 2vw, 16px);
-    }
-    .service-card h3 {
-      font-size: clamp(0.88rem, 2.5vw, 1rem);
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-    .service-card p {
-      font-size: clamp(0.78rem, 2vw, 0.85rem);
-      color: var(--ink-2);
-      line-height: 1.6;
-    }
+        body {
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-    /* ===== INFO STRIP ===== */
-    .info-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-      gap: clamp(12px, 2vw, 16px);
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
-    }
-    .info-item {}
-    .info-item-label {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      margin-bottom: 6px;
-    }
-    .info-item-value {
-      font-size: clamp(0.88rem, 2.5vw, 0.98rem);
-      color: var(--ink);
-      font-weight: 500;
-      line-height: 1.45;
-    }
-    .info-item a.info-link {
-      color: var(--accent);
-      font-weight: 600;
-    }
-    .info-item a.info-link:hover { opacity: 0.8; }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
 
-    /* ===== MAP ===== */
-    .map-wrap {
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      margin-top: clamp(16px, 3vw, 24px);
-    }
-    .map-wrap iframe { width: 100%; height: clamp(200px, 28vw, 280px); border: 0; display: block; }
+        p {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: var(--ink);
-      padding: clamp(28px, 5vw, 44px) clamp(16px, 4vw, 48px);
-      text-align: center;
-    }
-    .footer-inner { max-width: 960px; margin: 0 auto; }
-    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.8; }
-    footer a { color: rgba(255,255,255,0.6); transition: color 0.15s; }
-    footer a:hover { color: rgba(255,255,255,0.9); }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
 
-    /* ===== STICKY BAR ===== */
-    .sticky-bar {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: rgba(253, 250, 246, 0.97);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
-      padding: clamp(10px, 2vw, 14px) clamp(16px, 4vw, 24px);
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      z-index: 100;
-      box-shadow: 0 -4px 24px rgba(42, 31, 26, 0.08);
-    }
-    .sticky-bar-info { min-width: 0; }
-    .sticky-bar-name {
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-      font-weight: 700;
-      color: var(--ink);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .sticky-bar-phone { font-size: clamp(0.7rem, 2vw, 0.78rem); color: var(--ink-2); }
-    .sticky-cta {
-      background: var(--accent);
-      color: #fff;
-      font-weight: 700;
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-      padding: clamp(8px, 2vw, 11px) clamp(16px, 3vw, 22px);
-      border-radius: 8px;
-      white-space: nowrap; flex-shrink: 0;
-      display: flex; align-items: center; gap: 6px;
-      transition: background 0.15s;
-    }
-    .sticky-cta:hover { background: var(--accent-dark); }
-    .pad-bottom { height: clamp(64px, 10vw, 80px); }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    /* ===== MOBILE — stack hero ===== */
-    @media (max-width: 640px) {
-      .hero {
-        grid-template-columns: 1fr;
-        min-height: unset;
-      }
-      .hero-img-col { min-height: clamp(200px, 50vw, 280px); }
-      .hero-text-col { padding: clamp(24px, 6vw, 36px) clamp(16px, 5vw, 24px); }
-      .services-grid { grid-template-columns: 1fr; }
-      .info-strip { grid-template-columns: 1fr; }
-    }
+        button, input, textarea {
+            font-family: inherit;
+            outline: none;
+        }
 
-    @media (max-width: 380px) {
-      .topbar-inner { flex-wrap: wrap; }
-    }
+        /* Custom Selection Color */
+        ::selection {
+            background-color: var(--primary);
+            color: var(--white);
+        }
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      html { scroll-behavior: auto; }
-    }
-  </style>
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--charcoal-deep);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--charcoal-light);
+            border: 2px solid var(--charcoal-deep);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        /* Top Scroll Progress Indicator */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, #FF8A50 100%);
+            z-index: 10000;
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Glowing follow cursor for desktops */
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+            display: none;
+        }
+        @media (pointer: fine) {
+            .custom-cursor {
+                display: block;
+            }
+        }
+        .custom-cursor.hover {
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 94, 20, 0.15);
+            border-color: #FF8A50;
+        }
+
+        /* Layout Utilities */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 2rem;
+            font-family: var(--font-display);
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(255, 94, 20, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 94, 20, 0.5);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--charcoal-light);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            background-color: rgba(255, 94, 20, 0.05);
+            transform: translateY(-3px);
+        }
+
+        /* SVG Icons */
+        .icon {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            stroke-width: 2;
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Header Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            background-color: rgba(18, 20, 22, 0.8);
+            border-bottom: 1px solid var(--charcoal-border);
+            transition: var(--transition-smooth);
+        }
+
+        header.scrolled {
+            padding: 0.5rem 0;
+            background-color: rgba(18, 20, 22, 0.95);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+            font-family: var(--font-display);
+            color: var(--white);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            color: var(--text-secondary);
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            .header-actions {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        /* Mobile Menu Button */
+        .mobile-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 1001;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-toggle {
+                display: none;
+            }
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: currentColor;
+            transition: var(--transition-smooth);
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-toggle.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Mobile Menu Navigation Overlay */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--charcoal-deep);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav a {
+            font-size: 1.5rem;
+            font-family: var(--font-display);
+            font-weight: 700;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section with Asymmetry & Diagonal Split */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            overflow: hidden;
+            background-color: var(--charcoal-deep);
+        }
+
+        @media (min-width: 992px) {
+            .hero {
+                grid-template-columns: 1.15fr 0.85fr;
+            }
+        }
+
+        .hero-content-side {
+            position: relative;
+            z-index: 3;
+            padding: 8rem 1.5rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--charcoal-deep);
+        }
+
+        @media (min-width: 992px) {
+            .hero-content-side {
+                padding: 10rem 5rem 10rem 10%;
+                clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+                background: linear-gradient(135deg, var(--charcoal-deep) 0%, #171b1e 100%);
+                margin-right: -12%;
+            }
+        }
+
+        .hero-badge {
+            align-self: flex-start;
+            background-color: rgba(255, 94, 20, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            animation: pulse-border 2s infinite;
+        }
+
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(255, 94, 20, 0.4); }
+            70% { box-shadow: 0 0 0 8px rgba(255, 94, 20, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 94, 20, 0); }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title span {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .hero-image-side {
+            position: relative;
+            min-height: 50vh;
+            background-image: url('https://images.unsplash.com/photo-1590735204425-271d8befb547?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media (min-width: 992px) {
+            .hero-image-side {
+                min-height: 100vh;
+                clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        .hero-image-side::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(18, 20, 22, 0.95) 0%, rgba(25, 29, 32, 0.4) 50%, rgba(18, 20, 22, 0.8) 100%);
+        }
+
+        @media (min-width: 992px) {
+            .hero-image-side::after {
+                background: linear-gradient(135deg, rgba(255, 94, 20, 0.35) 0%, rgba(18, 20, 22, 0.85) 100%);
+            }
+        }
+
+        /* Floating established seal Badge on Hero Split */
+        .hero-seal {
+            position: absolute;
+            display: none;
+            background-color: var(--primary);
+            color: var(--white);
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            box-shadow: 0 10px 25px rgba(255, 94, 20, 0.4);
+            border: 4px solid var(--charcoal-deep);
+            z-index: 10;
+            animation: spin-slow 20s linear infinite;
+        }
+
+        @media (min-width: 992px) {
+            .hero-seal {
+                display: flex;
+                right: 39%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        @keyframes spin-slow {
+            100% { transform: translateY(-50%) rotate(360deg); }
+        }
+
+        .hero-seal span {
+            display: block;
+            line-height: 1.1;
+        }
+
+        .hero-seal .seal-year {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        /* Stats Banner Component */
+        .stats-banner {
+            background-color: var(--charcoal-mid);
+            border-top: 1px solid var(--charcoal-border);
+            border-bottom: 1px solid var(--charcoal-border);
+            padding: 3rem 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .stat-item h3 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-family: var(--font-display);
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Section Layout Style */
+        section {
+            padding: 7rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            position: relative;
+        }
+
+        .section-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+        }
+
+        .section-subtitle {
+            text-transform: uppercase;
+            color: var(--primary);
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            color: var(--white);
+            font-weight: 800;
+        }
+
+        /* Services horizontal scroll section */
+        .services-section {
+            background-color: var(--charcoal-deep);
+            overflow: hidden;
+        }
+
+        .services-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+        }
+
+        .services-header-container .section-header {
+            margin-bottom: 0;
+        }
+
+        .scroll-controls {
+            display: none;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .scroll-controls {
+                display: flex;
+            }
+        }
+
+        .control-btn {
+            background-color: var(--charcoal-light);
+            border: 1px solid var(--charcoal-border);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--white);
+            transition: var(--transition-bounce);
+        }
+
+        .control-btn:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        .services-scroll-container {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 1.5rem 0.5rem;
+            scroll-behavior: smooth;
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+        }
+
+        .services-scroll-container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar Chrome/Safari */
+        }
+
+        .service-card {
+            flex: 0 0 280px;
+            scroll-snap-align: start;
+            background-color: var(--charcoal-mid);
+            border: 1px solid var(--charcoal-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .service-card {
+                flex: 0 0 360px;
+            }
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 94, 20, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 94, 20, 0.1);
+        }
+
+        .service-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .service-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .service-card:hover .service-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .service-card-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: rgba(18, 20, 22, 0.85);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            padding: 0.35rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+        }
+
+        .service-card-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: var(--white);
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .service-card:hover .service-link {
+            color: var(--white);
+        }
+
+        .service-link svg {
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover .service-link svg {
+            transform: translateX(5px);
+            stroke: var(--primary);
+        }
+
+        /* About Section (Heritage) */
+        .about-section {
+            background-color: var(--charcoal-mid);
+            border-top: 1px solid var(--charcoal-border);
+            border-bottom: 1px solid var(--charcoal-border);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1.1fr 0.9fr;
+            }
+        }
+
+        .about-images-wrapper {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            height: 480px;
+        }
+
+        .about-img-main {
+            grid-column: 1 / 10;
+            grid-row: 1 / 10;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--charcoal-border);
+            z-index: 2;
+        }
+
+        .about-img-secondary {
+            grid-column: 5 / 13;
+            grid-row: 5 / 13;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 4px solid var(--charcoal-mid);
+            z-index: 3;
+            position: relative;
+        }
+
+        .about-img-main img, .about-img-secondary img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-floating-accent {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, #FF8A50 100%);
+            bottom: 5%;
+            left: 2%;
+            z-index: 1;
+            opacity: 0.15;
+            filter: blur(10px);
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .about-highlight-box {
+            background-color: var(--charcoal-light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .about-highlight-box p {
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background-color: var(--charcoal-deep);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .testimonial-card {
+            background-color: var(--charcoal-mid);
+            border: 1px solid var(--charcoal-border);
+            padding: 2.5rem;
+            border-radius: 20px;
+            position: relative;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 94, 20, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .quote-svg {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 40px;
+            height: 40px;
+            color: rgba(255, 94, 20, 0.1);
+        }
+
+        .stars-container {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        .star {
+            color: var(--gold);
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .testimonial-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(255, 94, 20, 0.3);
+        }
+
+        .author-details h4 {
+            font-size: 1rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .author-details p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Personality-Driven Contact & Map Section */
+        .contact-section {
+            background-color: var(--charcoal-mid);
+            border-top: 1px solid var(--charcoal-border);
+            border-bottom: 1px solid var(--charcoal-border);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 0.95fr 1.05fr;
+            }
+        }
+
+        .contact-info-block {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .contact-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background-color: var(--charcoal-light);
+            border: 1px solid var(--charcoal-border);
+            padding: 1.5rem;
+            border-radius: 16px;
+            transition: var(--transition-smooth);
+        }
+
+        .contact-method-card:hover {
+            transform: translateX(5px);
+            border-color: var(--primary);
+        }
+
+        .method-icon-container {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background-color: rgba(255, 94, 20, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 94, 20, 0.2);
+        }
+
+        .method-details span {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.2rem;
+        }
+
+        .method-details a, .method-details p {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .method-details a:hover {
+            color: var(--primary);
+        }
+
+        .hours-box {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px dashed var(--charcoal-border);
+            padding: 2rem;
+            border-radius: 16px;
+        }
+
+        .hours-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        .hours-row span:first-child {
+            color: var(--text-secondary);
+        }
+
+        .hours-row span:last-child {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .hours-row.active span {
+            color: var(--primary) !important;
+            font-weight: 700;
+        }
+
+        /* Google Maps and Form styling */
+        .interactive-right-side {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--charcoal-border);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            /* Charcoal Custom Map Overlay Filter */
+            filter: grayscale(1) invert(0.9) contrast(1.2);
+            transition: var(--transition-smooth);
+        }
+
+        .map-wrapper:hover iframe {
+            filter: grayscale(0.2) invert(0.9) contrast(1.1);
+        }
+
+        .contact-form-card {
+            background-color: var(--charcoal-light);
+            border: 1px solid var(--charcoal-border);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-row-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .form-row-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group-last {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input, .form-group textarea {
+            background-color: var(--charcoal-mid);
+            border: 1px solid var(--charcoal-border);
+            padding: 1rem;
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(255, 94, 20, 0.15);
+            background-color: var(--charcoal-deep);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Success Toast Notifications */
+        .toast-notification {
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-family: var(--font-display);
+            font-weight: 700;
+            z-index: 10002;
+            box-shadow: 0 10px 25px rgba(255, 94, 20, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: var(--transition-bounce);
+        }
+
+        .toast-notification.active {
+            bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal-deep);
+            border-top: 1px solid var(--charcoal-border);
+            padding: 5rem 0 3rem;
+            color: var(--text-secondary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr 1fr;
+            }
+        }
+
+        .footer-brand-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-brand-column p {
+            max-width: 320px;
+        }
+
+        .social-row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--charcoal-mid);
+            border: 1px solid var(--charcoal-border);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-bounce);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            color: var(--white);
+        }
+
+        .footer-column-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--charcoal-border);
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-bottom {
+                flex-direction: row;
+            }
+        }
+
+        /* Scroll Animation States */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .revealed {
+            opacity: 1;
+            transform: translate(0) !important;
+        }
+
+        /* Stagger delays for list animations */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+    </style>
 </head>
 <body>
 
-<!-- ===== TOP BAR ===== -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-brand">Gainesville Shoe Repair</div>
-    <a href="tel:+1 770-534-1555" class="topbar-phone">📞 +1 770-534-1555</a>
-  </div>
-</div>
+    <!-- Top Scroll Progress bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-text-col">
-    <div class="hero-badge">Cleaning Service</div>
-    <h1>Gainesville Shoe Repair</h1>
-    <p class="hero-sub">Professional Cleaning Service services in Gainesville, GA. Reliable, thorough, and built on genuine 5-star reviews.</p>
-    <div class="hero-rating" style="display: flex;">
-      <span class="hero-stars">★★★★★</span>
-      <span>4.6 ·  Google reviews</span>
-    </div>
-    <div class="hero-actions">
-      <a href="tel:+1 770-534-1555" class="btn-primary">📞 Call Now</a>
-      <a href="#" target="_blank" rel="noopener" class="btn-outline">📍 See on Google</a>
-    </div>
-  </div>
-  <div class="hero-img-col" aria-hidden="true"></div>
-</section>
+    <!-- Glowing custom follow cursor -->
+    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
 
-<!-- ===== SERVICES ===== -->
-<section class="section section--tinted">
-  <div class="wrap">
-    <div class="section-header">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Our Services</h2>
-    </div>
-    <div class="services-grid">
+    <!-- Sticky Navigation Header -->
+    <header id="header">
+        <div class="container nav-wrapper">
+            <a href="#hero" class="logo select-cursor">
+                <!-- Shoe Stitch Logo Icon -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon" style="color: var(--primary);">
+                    <path d="M4 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6z" />
+                    <path d="M9 22h6" />
+                    <path d="M12 18v4" />
+                    <path d="M8 7h8" stroke-dasharray="2,2" />
+                    <path d="M8 11h8" stroke-dasharray="2,2" />
+                </svg>
+                Gainesville<span>ShoeRepair</span>
+            </a>
 
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Regular Home Cleaning</h3>
-      <p>Weekly or bi-weekly cleaning to keep your home spotless and fresh.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Deep Cleaning</h3>
-      <p>Thorough top-to-bottom cleaning for kitchens, bathrooms, and all living areas.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Move-In / Move-Out Clean</h3>
-      <p>Get your space move-in ready or leave it spotless when you go.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Office & Commercial Clean</h3>
-      <p>Keep your workspace professional, sanitized, and employee-ready.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Post-Construction Clean</h3>
-      <p>Remove dust, debris, and residues after renovation or building work.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Eco-Friendly Options</h3>
-      <p>Green cleaning products available — safe for kids, pets, and the planet.</p>
-    </div>
-    </div>
-  </div>
-</section>
+            <!-- Desktop Links -->
+            <nav class="nav-links">
+                <a href="#services" class="select-cursor active">Services</a>
+                <a href="#about" class="select-cursor">Our Story</a>
+                <a href="#testimonials" class="select-cursor">Reviews</a>
+                <a href="#contact" class="select-cursor">Contact Us</a>
+            </nav>
 
-<!-- ===== INFO + MAP ===== -->
-<section class="section section--white">
-  <div class="wrap wrap--narrow">
-    <div class="section-header">
-      <div class="section-label">Find Us</div>
-      <h2 class="section-title">Contact &amp; Location</h2>
-    </div>
-    <div class="info-strip">
-      <div class="info-item">
-        <div class="info-item-label">📍 Address</div>
-        <div class="info-item-value">209 Jesse Jewell Pkwy SE</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">📞 Phone</div>
-        <div class="info-item-value"><a href="tel:+1 770-534-1555" class="info-link">+1 770-534-1555</a></div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">🕐 Service Area</div>
-        <div class="info-item-value">Gainesville, GA &amp; surrounding areas</div>
-      </div>
-    </div>
-    <div class="map-wrap">
-      <iframe
-        title="Gainesville Shoe Repair location"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=209+Jesse+Jewell+Pkwy+SE&amp;output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
+            <div class="header-actions">
+                <a href="tel:+17705341555" class="btn btn-outline select-cursor" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">
+                    Call Doug: (770) 534-1555
+                </a>
+            </div>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-inner">
-    <p><strong>Gainesville Shoe Repair</strong> &nbsp;·&nbsp; 209 Jesse Jewell Pkwy SE</p>
-    <p style="margin-top:8px;">+1 770-534-1555</p>
-    <p style="margin-top:12px;">Preview site built by <a href="https://clawops.studio" target="_blank">ClawOps Studio</a></p>
-  </div>
-</footer>
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-toggle select-cursor" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-<!-- ===== STICKY CTA ===== -->
-<div class="pad-bottom"></div>
-<div class="sticky-bar">
-  <div class="sticky-bar-info">
-    <div class="sticky-bar-name">Gainesville Shoe Repair</div>
-    <div class="sticky-bar-phone">+1 770-534-1555</div>
-  </div>
-  <a href="tel:+1 770-534-1555" class="sticky-cta">📞 Call Now</a>
-</div>
+    <!-- Mobile Navigation Overlay -->
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Navigation">
+        <a href="#services" class="mobile-link select-cursor">Services</a>
+        <a href="#about" class="mobile-link select-cursor">Our Story</a>
+        <a href="#testimonials" class="mobile-link select-cursor">Reviews</a>
+        <a href="#contact" class="mobile-link select-cursor">Contact Us</a>
+        <a href="tel:+17705341555" class="btn btn-primary select-cursor" style="margin-top: 1rem;">Call Doug Now</a>
+    </nav>
 
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content-side">
+                <div class="hero-badge reveal">Family Owned Since 1988</div>
+                <h1 class="hero-title reveal">Don't Trash Your Boots. <br><span>Restore Them.</span></h1>
+                <p class="hero-description reveal">
+                    We've saved thousands of heels, boots, and leather goods over the past three decades. Bring back the original look, fit, and comfort of your favorite pair with master cobbling.
+                </p>
+                <div class="hero-ctas reveal">
+                    <a href="#contact" class="btn btn-primary select-cursor">Book a Repair</a>
+                    <a href="#services" class="btn btn-outline select-cursor">See Services</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-side" aria-label="Cobbler at work inside Gainesville workshop">
+                <!-- Circular floating Seal on larger screens -->
+                <div class="hero-seal select-cursor">
+                    <span>Est. <br><strong class="seal-year">1988</strong><br>Gainesville GA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="container stats-grid">
+                <div class="stat-item reveal">
+                    <h3>38+</h3>
+                    <p>Years of Service</p>
+                </div>
+                <div class="stat-item reveal delay-1">
+                    <h3>10k+</h3>
+                    <p>Soles Replaced</p>
+                </div>
+                <div class="stat-item reveal delay-2">
+                    <h3>100%</h3>
+                    <p>Leather Restored</p>
+                </div>
+                <div class="stat-item reveal delay-3">
+                    <h3>5/5</h3>
+                    <p>Local Rep</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section (Horizontal Scrollable Cards) -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="services-header-container">
+                    <div class="section-header reveal-left">
+                        <span class="section-subtitle">What We Do</span>
+                        <h2 class="section-title">Master Craftsman Services</h2>
+                    </div>
+                    <!-- Custom Arrow scroll controls -->
+                    <div class="scroll-controls reveal-right">
+                        <button class="control-btn select-cursor" id="scroll-prev-btn" aria-label="Scroll services left">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                        <button class="control-btn select-cursor" id="scroll-next-btn" aria-label="Scroll services right">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="services-scroll-container" id="services-scroll">
+                    <!-- Service 1 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600&q=80" alt="Full sole replacement on leather dress shoe">
+                            <div class="service-card-tag">Bestseller</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Sole Replacement</h3>
+                            <p>Worn out, cracked, or detached soles? We rebuild bottom units with premium Vibram rubber or leather outsoles for dress shoes, boots, and heels.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=600&q=80" alt="Sturdy heel block replacement and repair">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Heel Repair & Building</h3>
+                            <p>We replace worn rubber taps, loose dowels, or reconstruct degraded wooden stacks. Walk with stability and perfect alignment once again.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1508847154043-be12a62861c1?auto=format&fit=crop&w=600&q=80" alt="Precise shoe sewing machine stitching">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Stitching & Seam Fixes</h3>
+                            <p>From blown-out side seams to broken eyelets and decorative stitches, we use industrial sewing gear to match your shoe's original lines.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531875456634-3f541a2bde56?auto=format&fit=crop&w=600&q=80" alt="Polishing and conditioning premium leather boots">
+                            <div class="service-card-tag">Revive</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Leather Conditioning</h3>
+                            <p>Restore lost oils, clean salt stains, fix color fading, and weatherproof your shoes against Georgia rains. A complete spa day for leather goods.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80" alt="Work boots lined up in cobbler shop">
+                            <div class="service-card-tag">Heavy Duty</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Boot Repair & Welting</h3>
+                            <p>Specialized re-welting, eyelet reinforcement, and structural upgrades for cowboy, hunting, and industrial work boots. Engineered to last.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1490424418207-3467b41e13fc?auto=format&fit=crop&w=600&q=80" alt="Replacing metal zipper on leather riding boot">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Zipper & Hardware</h3>
+                            <p>Broken zipper slide or slider on your favorite riding boots or jacket? We install heavy-duty metal zippers, buckles, and snap pins.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card select-cursor">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80" alt="Beautiful customized leather belts on display">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Belt Shortening & Repairs</h3>
+                            <p>Don't throw away custom or designer belts that don't fit. We cleanly shorten, restitch, and repaint edges to match original aesthetics.</p>
+                            <a href="#contact" class="service-link">
+                                Get Quote
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Our Story / Heritage) -->
+        <section class="about-section" id="about">
+            <div class="container about-grid">
+                
+                <div class="about-images-wrapper reveal-left">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1490424418207-3467b41e13fc?auto=format&fit=crop&w=800&q=80" alt="Shoe polishing craftsman polishing high end footwear">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" alt="Row of handcrafted leather shoes on display">
+                    </div>
+                    <div class="about-floating-accent"></div>
+                </div>
+
+                <div class="about-content reveal-right">
+                    <div class="section-header">
+                        <span class="section-subtitle">Our Heritage</span>
+                        <h2 class="section-title">Gainesville's Family Cobblers</h2>
+                    </div>
+                    <h3>Keeping North Georgia Walking Since 1988</h3>
+                    <p>
+                        Gainesville Shoe Repair isn't just a shop—it's a staple of our community. Established in 1988 by the Embry family, we have spent over 35 years refining the craft of hand-crafted leather repair and sole reconstruction. 
+                    </p>
+                    <p>
+                        Led by head cobbler Doug Embry, we believe in preservation over replacement. In a world full of disposable fashion, we stand for durability. We use heritage tools combined with modern adhesives to guarantee your boots return tougher than they left.
+                    </p>
+                    <div class="about-highlight-box">
+                        <p>"If you buy a quality pair of leather shoes, they shouldn't just last you a couple of seasons. With proper care and timely resoling, they should last you a lifetime."</p>
+                        <span style="display: block; margin-top: 0.5rem; font-weight: 700; color: var(--primary); font-family: var(--font-display); text-transform: uppercase; font-size: 0.8rem;">— Doug Embry, Founder</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary select-cursor">Talk to a Craftsman</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header reveal" style="text-align: center; align-items: center;">
+                    <span class="section-subtitle">Real Reviews</span>
+                    <h2 class="section-title">Saved Soles, Happy Customers</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card reveal">
+                        <!-- Big quote SVG -->
+                        <svg class="quote-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5z"/>
+                        </svg>
+                        
+                        <div>
+                            <div class="stars-container">
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="testimonial-content">
+                                "Doug saved my favorite leather boots! I thought they were done for after a severe sole separation, but they came back looking better than when I bought them. Highly recommend Gainesville Shoe Repair!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MT</div>
+                            <div class="author-details">
+                                <h4>Marcus T.</h4>
+                                <p>Gainesville Resident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card reveal delay-1">
+                        <!-- Big quote SVG -->
+                        <svg class="quote-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5z"/>
+                        </svg>
+
+                        <div>
+                            <div class="stars-container">
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="testimonial-content">
+                                "This shop is a North Georgia treasure. They shortened a fine leather belt for me and fully conditioned my vintage designer handbag. Flawless stitch matching, fair prices, and fast turnaround."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SL</div>
+                            <div class="author-details">
+                                <h4>Sarah L.</h4>
+                                <p>Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card reveal delay-2">
+                        <!-- Big quote SVG -->
+                        <svg class="quote-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.077 1.183-4.944 3.42-4.944 5.725h5v9h-11v-5z"/>
+                        </svg>
+
+                        <div>
+                            <div class="stars-container">
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="testimonial-content">
+                                "Incredibly friendly service, honest rates, and clear expertise. They repaired a blown out zipper track on my tall leather riding boots. They work like brand new. Five stars all day long!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div class="author-details">
+                                <h4>Robert K.</h4>
+                                <p>Rancher & Horseman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personality-Driven Contact & Map Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                
+                <div class="contact-info-block reveal-left">
+                    <div class="section-header">
+                        <span class="section-subtitle">Say Hello</span>
+                        <h2 class="section-title">Let's Save Your Soles</h2>
+                    </div>
+                    <p class="contact-desc">
+                        Got a pair of shoes that have seen better days? A beloved bag that needs a zipper replacement? Or a custom belt that's too loose? Bring them on down or get in touch. Doug and the team are ready to handle it.
+                    </p>
+
+                    <div class="contact-methods">
+                        <!-- Phone -->
+                        <div class="contact-method-card select-cursor">
+                            <div class="method-icon-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span>Call Doug Direct</span>
+                                <a href="tel:+17705341555">+1 770-534-1555</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-method-card select-cursor">
+                            <div class="method-icon-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span>Send an Email</span>
+                                <a href="mailto:dougembry48@gmail.com">dougembry48@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-method-card select-cursor">
+                            <div class="method-icon-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span>Drop By Shop</span>
+                                <p style="margin:0; font-weight:600; color:var(--white);">209 Jesse Jewell Pkwy SE <br>Gainesville, GA 30501</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hours Box -->
+                    <div class="hours-box">
+                        <div class="hours-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon" style="color:var(--primary);">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            Shop Hours
+                        </div>
+                        <div class="hours-list">
+                            <div class="hours-row" id="day-mon"><span>Monday - Friday</span><span>8:00 AM - 5:30 PM</span></div>
+                            <div class="hours-row" id="day-sat"><span>Saturday</span><span>9:00 AM - 1:00 PM</span></div>
+                            <div class="hours-row" id="day-sun"><span>Sunday</span><span>Closed</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map and Form right side -->
+                <div class="interactive-right-side reveal-right">
+                    
+                    <!-- Styled Google Maps Embed (Dark Themed via Grayscale Filters) -->
+                    <div class="map-wrapper" aria-label="Google Map showing location of Gainesville Shoe Repair at 209 Jesse Jewell Pkwy SE">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.0526019559384!2d-83.82142272426868!3d34.298939773066376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5f401ea69584d%3A0x6b840003055e8c10!2s209%20Jesse%20Jewell%20Pkwy%20SE%2C%20Gainesville%2C%20GA%2030501!5e0!3m2!1sen!2sus!4v1717268800000!5m2!1sen!2sus" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <h3 style="font-size: 1.5rem; color: var(--white); margin-bottom: 1.5rem;">Request a Consultation</h3>
+                        <form id="consultation-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required class="select-cursor">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-phone">Phone Number</label>
+                                    <input type="tel" id="form-phone" placeholder="(770) 555-0199" required class="select-cursor">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required class="select-cursor">
+                            </div>
+                            <div class="form-group form-group-last">
+                                <label for="form-message">Describe Your Repair</label>
+                                <textarea id="form-message" placeholder="Include details such as brand, material, and type of repair needed..." required class="select-cursor"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary select-cursor" style="width: 100%;">Submit Form</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating success notification -->
+    <div class="toast-notification" id="toast">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="icon" style="margin: 0;">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Message sent! Doug will call you soon.
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-column">
+                <a href="#hero" class="logo select-cursor">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon" style="color: var(--primary);">
+                        <path d="M4 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6z" />
+                        <path d="M9 22h6" />
+                        <path d="M12 18v4" />
+                        <path d="M8 7h8" stroke-dasharray="2,2" />
+                    </svg>
+                    Gainesville<span>ShoeRepair</span>
+                </a>
+                <p>Preserving fine footwear, work boots, and handcrafted leather goods in Gainesville, Georgia since 1988.</p>
+                <div class="social-row">
+                    <a href="#" class="social-link select-cursor" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link select-cursor" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link select-cursor" aria-label="Yelp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-column-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#services" class="select-cursor">Services Offered</a>
+                    <a href="#about" class="select-cursor">Our Story</a>
+                    <a href="#testimonials" class="select-cursor">Testimonials</a>
+                    <a href="#contact" class="select-cursor">Get In Touch</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-column-title">Locate Us</h4>
+                <p style="margin-bottom: 1rem; color: var(--white); font-weight: 600;">Gainesville Shoe Repair</p>
+                <p style="margin-bottom: 0.5rem;">209 Jesse Jewell Pkwy SE</p>
+                <p style="margin-bottom: 1.5rem;">Gainesville, GA 30501</p>
+                <p style="font-size: 0.9rem;">Phone: <a href="tel:+17705341555" class="select-cursor" style="color:var(--white); font-weight:600;">+1 770-534-1555</a></p>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Gainesville Shoe Repair. All rights reserved.</p>
+            <p>Family-owned & operated in Gainesville, GA since 1988.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Custom Follow Cursor Logic (only for desktop pointer devices)
+        const cursor = document.getElementById('cursor');
+        
+        if (window.matchMedia('(pointer: fine)').matches) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+
+            // Expand cursor on hoverable elements
+            const hoverables = document.querySelectorAll('.select-cursor, a, button, input, textarea');
+            hoverables.forEach(item => {
+                item.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+                item.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+            });
+        }
+
+        // Scroll Progress Bar Logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+        });
+
+        // Sticky Header / Background change on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Hamburger Navigation Drawer Toggle
+        const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMobileMenu() {
+            mobileToggleBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        }
+
+        mobileToggleBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggleBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+
+        // Horizontal Scroll Controls for Services Scroll Container
+        const servicesScroll = document.getElementById('services-scroll');
+        const prevBtn = document.getElementById('scroll-prev-btn');
+        const nextBtn = document.getElementById('scroll-next-btn');
+
+        if (servicesScroll && prevBtn && nextBtn) {
+            const cardWidth = 392; // 360px card + 32px gap
+            
+            prevBtn.addEventListener('click', () => {
+                servicesScroll.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                servicesScroll.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            });
+        }
+
+        // IntersectionObserver for Scroll animations
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    // Stop observing once animated
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        // Navigation Active Page tracking on Scroll
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 150)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').slice(1) === currentSection) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Highlights current day in the contact hours schedule list
+        const today = new Date().getDay(); // 0=Sunday, 1=Monday, ..., 6=Saturday
+        if (today >= 1 && today <= 5) {
+            document.getElementById('day-mon').classList.add('active');
+        } else if (today === 6) {
+            document.getElementById('day-sat').classList.add('active');
+        } else if (today === 0) {
+            document.getElementById('day-sun').classList.add('active');
+        }
+
+        // Custom consultation form submission mock logic
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const email = document.getElementById('form-email').value;
+            const message = document.getElementById('form-message').value;
+
+            // Trigger elegant success toast
+            const toast = document.getElementById('toast');
+            toast.classList.add('active');
+            
+            // Reset form
+            document.getElementById('consultation-form').reset();
+            
+            // Remove toast after 4 seconds
+            setTimeout(() => {
+                toast.classList.remove('active');
+            }, 4000);
+        }
+    </script>
 </body>
 </html>
